@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Talha - CS Student Portfolio</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import for 'Inter' */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+        /* Custom scrollbar styling for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9; /* Tailwind gray-100 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8; /* Tailwind slate-400 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b; /* Tailwind slate-600 */
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-lg sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Site Title / Logo -->
+            <a href="#home" class="text-2xl font-bold text-indigo-600 hover:text-indigo-800 transition-colors duration-300 rounded-md p-2">
+                <span class="sr-only">Home</span> M Talha
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="flex space-x-4 md:space-x-8">
+                <a href="#about" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md hover:bg-gray-100">About</a>
+                <a href="#skills" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md hover:bg-gray-100">Skills</a>
+                <a href="#projects" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md hover:bg-gray-100">Projects</a>
+                <a href="#certifications" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md hover:bg-gray-100">Certifications</a>
+                <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md hover:bg-gray-100">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section / About Me (First Impression) -->
+        <section id="home" class="flex flex-col md:flex-row items-center justify-between py-20 bg-white rounded-xl shadow-xl p-8 mb-16 animate-fade-in">
+            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                    Hi, I'm <span class="text-indigo-600">M Talha</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-lg mx-auto md:mx-0">
+                    A passionate Computer Science student focused on building innovative solutions and constantly learning new technologies.
+                </p>
+                <a href="#projects" class="inline-block bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105">
+                    View My Projects
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <!-- Profile image updated with the provided image URL -->
+                <img src="https://content-fetcher.google-proxy.com/files/uploaded:3d-cartoon-computer-programmer-character-generative-ai_914383-1806.avif-08436bb9-b471-4ac1-996e-9543d8c9f808" alt="M Talha Profile Picture" class="rounded-full shadow-xl border-4 border-indigo-200 w-64 h-64 md:w-80 md:h-80 object-cover transform hover:rotate-3 transition-transform duration-300">
+            </div>
+        </section>
+
+        <!-- About Me Section (Detailed) -->
+        <section id="about" class="py-16 bg-white rounded-xl shadow-xl p-8 mb-16 animate-fade-in-delay">
+            <h2 class="text-4xl font-bold text-gray-900 text-center mb-10">About Me</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed space-y-4">
+                <p>
+                    I am a final-year Computer Science student at [Your University Name] with a strong foundation in data structures, algorithms, and software development principles. My academic journey has ignited a deep interest in web development, machine learning, and cybersecurity.
+                </p>
+                <p>
+                    During my studies, I've gained hands-on experience with various programming languages, including Python, Java, and JavaScript. I enjoy tackling complex problems and am always eager to learn new technologies and apply them to real-world challenges. My goal is to contribute to meaningful projects that have a positive impact.
+                </p>
+                <p>
+                    Outside of coding, I enjoy [mention a hobby, e.g., hiking, reading sci-fi, playing chess], which helps me stay refreshed and creative.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 bg-white rounded-xl shadow-xl p-8 mb-16 animate-fade-in-delay-2">
+            <h2 class="text-4xl font-bold text-gray-900 text-center mb-10">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <!-- Skill Category 1 -->
+                <div class="bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Programming Languages</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Python (Django, Flask)</li>
+                        <li>JavaScript (Node.js, React)</li>
+                        <li>Java (Spring Boot)</li>
+                        <li>C++</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <!-- Skill Category 2 -->
+                <div class="bg-green-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Web Technologies</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>HTML5 & CSS3 (Tailwind CSS)</li>
+                        <li>React.js</li>
+                        <li>Node.js & Express.js</li>
+                        <li>RESTful APIs</li>
+                        <li>Databases (MongoDB, PostgreSQL)</li>
+                    </ul>
+                </div>
+                <!-- Skill Category 3 -->
+                <div class="bg-purple-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Tools & Concepts</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Git & GitHub</li>
+                        <li>Docker (Basic)</li>
+                        <li>Agile Methodologies</li>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Cloud Platforms (AWS/GCP - Basic)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 bg-white rounded-xl shadow-xl p-8 mb-16 animate-fade-in-delay-3">
+            <h2 class="text-4xl font-bold text-gray-900 text-center mb-10">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <!-- AI-generated project image placeholder -->
+                    <img src="https://placehold.co/600x400/add8e6/000?text=AI+Web+App+Mockup" alt="AI Generated Web App Mockup" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-indigo-700 mb-2">E-commerce Web App</h3>
+                        <p class="text-gray-600 text-sm mb-4">React.js, Node.js, Express.js, MongoDB</p>
+                        <p class="text-gray-700 mb-4">A full-stack e-commerce platform featuring user authentication, product catalog, shopping cart, and order management functionalities.</p>
+                        <a href="https://github.com/talha-913/ecommerce-app" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 font-semibold flex items-center">
+                            View on GitHub
+                            <!-- SVG for external link icon -->
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-4-6h6m0 0l-6 6"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <!-- AI-generated project image placeholder -->
+                    <img src="https://placehold.co/600x400/98fb98/000?text=AI+ML+Visualisation" alt="AI Generated ML Visualisation" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Machine Learning Classifier</h3>
+                        <p class="text-gray-600 text-sm mb-4">Python, Scikit-learn, Pandas</p>
+                        <p class="text-gray-700 mb-4">Developed a classification model to predict customer churn based on various features, achieving 90% accuracy.</p>
+                        <a href="https://github.com/talha-913/ml-classifier" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 font-semibold flex items-center">
+                            View on GitHub
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-4-6h6m0 0l-6 6"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <!-- AI-generated project image placeholder -->
+                    <img src="https://placehold.co/600x400/ffd700/000?text=AI+Game+Screenshot" alt="AI Generated Game Screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Simple Chess Game</h3>
+                        <p class="text-gray-600 text-sm mb-4">JavaScript, HTML, CSS</p>
+                        <p class="text-gray-700 mb-4">An interactive web-based chess game with basic move validation and a simple UI.</p>
+                        <a href="https://github.com/talha-913/chess-game" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 font-semibold flex items-center">
+                            View on GitHub
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-4-6h6m0 0l-6 6"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-16 bg-white rounded-xl shadow-xl p-8 mb-16 animate-fade-in-delay-4">
+            <h2 class="text-4xl font-bold text-gray-900 text-center mb-10">My Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <!-- Certification Card 1 -->
+                <div class="bg-yellow-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Google Cybersecurity Professional Certificate</h3>
+                    <p class="text-gray-700 mb-2">Issued by Google</p>
+                    <p class="text-gray-600 text-sm">Skills Covered: Network Security, SIEM, Incident Response, Risk Management, Python for Security</p>
+                    <!-- Optionally add a link to the certificate if you have one -->
+                    <!-- <a href="[Link to Certificate]" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 font-semibold flex items-center mt-3">
+                        View Credential
+                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-4-6h6m0 0l-6 6"></path></svg>
+                    </a> -->
+                </div>
+                <!-- Certification Card 2 -->
+                <div class="bg-red-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Meta Frontend: Intro to Frontend and JavaScript</h3>
+                    <p class="text-gray-700 mb-2">Issued by Meta</p>
+                    <p class="text-gray-600 text-sm">Skills Covered: HTML, CSS, JavaScript, DOM Manipulation, Web Development Fundamentals</p>
+                    <!-- Optionally add a link to the certificate if you have one -->
+                    <!-- <a href="[Link to Certificate]" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 font-semibold flex items-center mt-3">
+                        View Credential
+                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-4-6h6m0 0l-6 6"></path></svg>
+                    </a> -->
+                </div>
+                <!-- Add more certification cards as needed -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-white rounded-xl shadow-xl p-8 animate-fade-in-delay-5">
+            <h2 class="text-4xl font-bold text-gray-900 text-center mb-10">Get In Touch</h2>
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-lg text-gray-700 mb-8">
+                    I'm currently seeking internships or entry-level positions in software development. Feel free to connect with me!
+                </p>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+                    <a href="mailto:imtalha913@gmail.com" class="bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhammad-talha-idrees-4b7a9021b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="bg-gray-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-900 transition-all duration-300 transform hover:scale-105 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path></svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/talha-913" target="_blank" rel="noopener noreferrer" class="bg-gray-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.799 8.207 11.387.6.11.82-.26.82-.577v-2.203c-3.336.724-4.043-1.611-4.043-1.611-.546-1.387-1.332-1.759-1.332-1.759-1.09-.745.082-.73.082-.73 1.205.084 1.838 1.234 1.838 1.234 1.07 1.834 2.809 1.3 3.491.993.109-.775.419-1.3.762-1.597-2.665-.304-5.467-1.334-5.467-5.93 0-1.309.467-2.373 1.236-3.208-.124-.304-.536-1.517.117-3.161 0 0 1-.32 3.27.97c.963-.266 1.986-.4 3.003-.404 1.017.004 2.039.138 3.003.404 2.27-1.29 3.268-.97 3.268-.97.653 1.644.24 2.857.117 3.161.77.835 1.233 1.899 1.233 3.208 0 4.606-2.807 5.621-5.475 5.922.429.369.816 1.102.816 2.222v3.292c0 .318.22.69.825.577C20.565 21.799 24 17.302 24 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd"></path></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 text-center rounded-t-lg">
+        <p>&copy; <span id="current-year"></span> M Talha. All rights reserved.</p>
+        <p class="text-sm mt-2">Built with HTML, CSS (Tailwind CSS), and ❤️</p>
+    </footer>
+
+    <script>
+        // Set the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Optional: Smooth scroll for navigation (though CSS scroll-behavior handles this too)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add simple fade-in animations on scroll (Intersection Observer)
+        const faders = document.querySelectorAll('.animate-fade-in, .animate-fade-in-delay, .animate-fade-in-delay-2, .animate-fade-in-delay-3, .animate-fade-in-delay-4, .animate-fade-in-delay-5');
+        const appearOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px" // Start animating when 50px from bottom of viewport
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('is-visible');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+
+        // CSS for fade-in animations (added dynamically or via separate style tag if preferred)
+        const styleSheet = document.createElement("style");
+        styleSheet.type = "text/css";
+        styleSheet.innerText = `
+            .animate-fade-in,
+            .animate-fade-in-delay,
+            .animate-fade-in-delay-2,
+            .animate-fade-in-delay-3,
+            .animate-fade-in-delay-4,
+            .animate-fade-in-delay-5 {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            }
+
+            .animate-fade-in.is-visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .animate-fade-in-delay.is-visible {
+                opacity: 1;
+                transform: translateY(0);
+                transition-delay: 0.2s; /* Slight delay for staggered effect */
+            }
+
+            .animate-fade-in-delay-2.is-visible {
+                opacity: 1;
+                transform: translateY(0);
+                transition-delay: 0.4s;
+            }
+
+            .animate-fade-in-delay-3.is-visible {
+                opacity: 1;
+                transform: translateY(0);
+                transition-delay: 0.6s;
+            }
+
+            .animate-fade-in-delay-4.is-visible {
+                opacity: 1;
+                transform: translateY(0);
+                transition-delay: 0.8s;
+            }
+
+            .animate-fade-in-delay-5.is-visible {
+                opacity: 1;
+                transform: translateY(0);
+                transition-delay: 1.0s;
+            }
+        `;
+        document.head.appendChild(styleSheet);
+    </script>
+</body>
+</html>
